@@ -5,6 +5,10 @@ public class RecursiveCounter {
 
     public static void recursiveCounter(int number) {
         // write this method
+        if (number > 1) {
+            recursiveCounter(number - 1);
+        }
+        System.out.println(number);
     }
 }
 
